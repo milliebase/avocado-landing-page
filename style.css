@@ -15,9 +15,12 @@ body {
     height: 100%;
 }
 
-section {
+section:not(.recipe) {
     min-height: 100vh;
+    padding: 3%;
 }
+
+/*********MAIN********/
 
 .main {
     display: flex;
@@ -29,8 +32,14 @@ nav {
     justify-content: space-between;
 }
 
-nav img {
+nav .logo {
     width: 50px;
+    transform: rotate(-36deg);
+}
+
+nav .menubar {
+    width: 30px;
+    height: 30px;
 }
 
 .mainText {
@@ -38,6 +47,53 @@ nav img {
     flex-direction: column;
     align-items: center;
 }
+
+
+/*********ORIGIN********/
+
+.origin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*********HEALTHY********/
+
+.healthy {
+    display: flex;
+    justify-content: center;
+}
+
+/*********SPECS********/
+
+.specs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specsText {
+    display: flex;
+    justify-content: center;
+}
+
+.specsText article:first-child {
+    text-align: right;
+}
+
+.specsText ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/*********RECIPE********/
+.recipe {
+    display: flex;
+
+}
+
+
+/*********BACKGROUNDS*******/
 
 .greenBg {
     background-color: #DCD3BD;
