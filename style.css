@@ -1,10 +1,15 @@
 
 
 
-
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+    .imgHealthy{
+        width:100px;
+        height: 200px;
+        border:1px solid black;
+        background-image: url(img/TheAvocadoOfStuff2.png);
+    }
 
 }
 
@@ -13,5 +18,14 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+    .imgHealthy{
+        width:100px;
+        height: 200px;
+        background-image:url("img/TheAvocadoOfStuff2 2.png");
+        background-size:100px 200px;
+
+    }
 }
+
+
 
