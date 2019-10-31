@@ -15,8 +15,11 @@ body {
     height: 100%;
 }
 
-section:not(.recipe) {
+section {
     min-height: 100vh;
+}
+
+section:not(.recipe) {
     padding: 3%;
 }
 
@@ -34,28 +37,26 @@ nav {
 
 nav .logo {
     width: 50px;
+    height: 50px;
     transform: rotate(-36deg);
 }
 
 nav .menubar {
     width: 30px;
     height: 30px;
+    align-self: flex-end;
 }
 
-.mainText {
+/*********FLEXBOX SECTIONS********/
+
+.mainText, .origin, .specs, .buy {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 /*********ORIGIN********/
 
-.origin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /*********HEALTHY********/
 
@@ -65,12 +66,6 @@ nav .menubar {
 }
 
 /*********SPECS********/
-
-.specs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .specsText {
     display: flex;
@@ -89,9 +84,25 @@ nav .menubar {
 /*********RECIPE********/
 .recipe {
     display: flex;
-
 }
 
+.recipe article:first-child {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+}
+
+.recipe article:last-child {
+    width: 50%;
+}
+
+.recipe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /*********BACKGROUNDS*******/
 
