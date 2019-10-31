@@ -27,7 +27,6 @@ section:not(.recipe) {
     flex-direction: column;
 }
 
-=======
 nav {
     display: flex;
     justify-content: space-between;
