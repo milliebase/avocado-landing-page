@@ -61,8 +61,17 @@ nav .menubar {
 
 .healthy {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height:100vh ;
+    
 }
+.imgHealthy{
+        width:210px;
+        height: 150px;
+        background-image: url('img/TheAvocadoOfStuff2.png');
+        background-size:cover ;
+    }
 
 /*********SPECS********/ 
 .specs h2{
@@ -126,12 +135,7 @@ nav .menubar {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-    .imgHealthy{
-        width:100px;
-        height: 200px;
-        border:1px solid black;
-        background-image: url('img/TheAvocadoOfStuff2.png');
-    }
+    
 
 }
 
@@ -141,10 +145,9 @@ nav .menubar {
 @media only screen and (min-width: 992px) {
 
     .imgHealthy{
-        width:100px;
-        height: 200px;
-        background-image:url("img/TheAvocadoOfStuff1.png");
-        background-size:100px 200px;
+        transform: scale(3) translateY(40%);
+       background-image:url("img/TheAvocadoOfStuff1.png");
+        background-size:cover;
 
     }
 }
