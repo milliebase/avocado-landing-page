@@ -60,7 +60,7 @@ p, li, h3 {
 
 /*********FLEXBOX SECTIONS********/
 
-.mainText, .origin, .specs, .buy, {
+.mainText, .origin, .specs, .buy {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,13 +101,18 @@ nav .menubar {
 /*****HEALTHY*******/
     .healthy{
         text-align: center;
+        margin-left:-11px;
     }
-    
+    .healthy h2 {
+        font-size: 44px;;
+    }
     .imgHealthy{
-            width:210px;
-            height: 150px;
+            
+            width:100%;
+            height: 80vh;
             background-image: url('img/TheAvocadoOfStuff2.png');
-            background-size:cover ;
+            background-size:cover;
+            background-position-x: -200%;
         }
 /********SPECS******/
     .specs h2{
@@ -148,7 +153,27 @@ nav .menubar {
 /*********BUY********/
 .buy article img {
     width: 100%;
+}/**CONTACT**/
+footer{
+    border-top:1px solid black;
+    display: flex;
+    flex-direction: row;
+    width:100%
 }
+footer ol {
+    padding:0px;
+    margin:0px;
+    text-align: left;
+
+}
+footer article{ width: 50%;}
+
+footer article{
+    border:1px solid black;
+    /* text-align:left; */
+}
+
+
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -166,13 +191,13 @@ nav .menubar {
     
     /*********HEALTHY********/
  
-    
+    /* 
     .imgHealthy{
             width:210px;
             height: 150px;
             background-image: url('img/TheAvocadoOfStuff2.png');
             background-size:cover ;
-        }
+        } */
     
     /*********SPECS********/ 
     
