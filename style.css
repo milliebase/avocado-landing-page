@@ -7,10 +7,11 @@
         url('/fonts/GardenGrownUS-B.woff') format('woff');
 } */
 
+/*MOBILDE-FIRST*/
+
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Garden Grown US B';
 }
 
 section {
@@ -19,20 +20,6 @@ section {
 
 section:not(.recipe) {
     padding: 3%;
-}
-
-/*********BACKGROUNDS*******/
-
-.greenBg {
-    background-color: #B0BEAF;
-}
-
-.beigeBg {
-    background-color: #DCD3BD;
-}
-
-.greenBg, .beigeBg {
-    color: white;
 }
 
 /**********TEXT********/
@@ -52,6 +39,20 @@ h1 {
 
 p, li, h3 {
     font-family: 'Roboto Mono', monospace;
+}
+
+/*********BACKGROUNDS*******/
+
+.greenBg {
+    background-color: #B0BEAF;
+}
+
+.beigeBg {
+    background-color: #DCD3BD;
+}
+
+.greenBg, .beigeBg {
+    color: white;
 }
 
 /*********FLEXBOX SECTIONS********/
@@ -75,14 +76,14 @@ nav {
 }
 
 nav .logo {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     transform: rotate(-36deg);
 }
 
 nav .menubar {
-    width: 30px;
-    height: 30px;
+    width: 44px;
+    height: 44px;
     align-self: flex-end;
 }
 
@@ -94,91 +95,117 @@ nav .menubar {
 .originText {
     padding: 5%;
 }
-
-/*********HEALTHY********/
-
-.healthy {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-height:100vh ;
     
-}
-.imgHealthy{
-        width:210px;
-        height: 150px;
-        background-image: url('img/TheAvocadoOfStuff2.png');
-        background-size:cover ;
-    }
-
-/*********SPECS********/ 
-.specs h2{
-    margin:0px -15px;
-}
-
-.specs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.specsText {
-    display: flex;
-    justify-content: center;
-    margin-top:37px;
-    font-size: 23px;
-}
-
-.specsText article:first-child {
-    text-align: right;
-    border-right: 1px solid white;
-}
-
-.specsText article:first-child ul li{
- padding-bottom:18px;
-}
-.specs li{
-    padding-bottom:10px ;
-}
-.specsText ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-.specsText article{
-    padding:0px 13px 50px 13px;
-
-}
 
 /*********RECIPE********/
 .recipe {
-    display: flex;
+    display:flex;
+    flex-direction: column-reverse;
 }
 
-.recipe article:first-child {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 5%;
-}
-
-.recipe article:last-child {
-    width: 50%;
-}
-
-.recipe img {
+.recipe article img {
     width: 100%;
-    height: 100%;
+    height: 150px;
     object-fit: cover;
 }
 
+/*********BUY********/
+.buy article img {
+    width: 100%;
+}
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+@media only screen and (min-width: 760px) {
     
-
+    nav .logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    nav .menubar {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /*********HEALTHY********/
+    
+    .healthy {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height:100vh ;
+        
+    }
+    .imgHealthy{
+            width:210px;
+            height: 150px;
+            background-image: url('img/TheAvocadoOfStuff2.png');
+            background-size:cover ;
+        }
+    
+    /*********SPECS********/ 
+    .specs h2{
+        margin:0px -15px;
+    }
+    
+    .specs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .specsText {
+        display: flex;
+        justify-content: center;
+        margin-top:37px;
+        font-size: 23px;
+    }
+    
+    .specsText article:first-child {
+        text-align: right;
+        border-right: 1px solid white;
+    }
+    
+    .specsText article:first-child ul li{
+     padding-bottom:18px;
+    }
+    .specs li{
+        padding-bottom:10px ;
+    }
+    .specsText ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    .specsText article{
+        padding:0px 13px 50px 13px;
+    
+    }
+    
+    /*********RECIPE********/
+    .recipe {
+        display: flex;
+    }
+    
+    .recipe article:first-child {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5%;
+    }
+    
+    .recipe article:last-child {
+        width: 50%;
+    }
+    
+    .recipe img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } 
 }
 
 
