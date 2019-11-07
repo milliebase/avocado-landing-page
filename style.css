@@ -111,7 +111,7 @@ nav .menubar {
         width:100px;
         height: 200px;
         border:1px solid black;
-        background-image: url(img/TheAvocadoOfStuff2.png);
+        background-image: url('img/TheAvocadoOfStuff2.png');
     }
 
 }
@@ -124,7 +124,7 @@ nav .menubar {
     .imgHealthy{
         width:100px;
         height: 200px;
-        background-image:url("img/TheAvocadoOfStuff2 2.png");
+        background-image:url("img/TheAvocadoOfStuff1.png");
         background-size:100px 200px;
 
     }
