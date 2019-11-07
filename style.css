@@ -19,10 +19,6 @@ section {
     min-width: 100vw;
 }
 
-section:not(.recipe) {
-    padding: 20px;
-}
-
 /*********FLEXBOX SECTIONS********/
 
 .flexColCenter {
@@ -46,8 +42,16 @@ h1 {
     font-size: 4em;
 }
 
+.spaceTop {
+    padding-top: 15%;
+}
+
 h2 {
     font-size: 2em;
+}
+
+.recipe h2 {
+    text-align: center;
 }
 
 p, li, h3 {
@@ -79,6 +83,7 @@ p, li, h3 {
 nav {
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 }
 
 nav .logo {
@@ -94,15 +99,31 @@ nav .menubar {
 }
 
 .mainText {
+    flex-grow: 1;
     margin-top: 5%;
+    background-image: url("img/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
 }
-
 /*********ORIGIN********/
 .originText {
     padding: 5%;
-}
-    
+}   
 
+/*********SPECS********/
+.specs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.specsText ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
 /*********RECIPE********/
 .recipe {
     display:flex;
@@ -129,14 +150,35 @@ nav .menubar {
 }
 
 /*********BUY********/
-.buy article img {
-    width: 100%;
+.buy article {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.avocados {
+    width: 80%;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 15px;
+    
+}
+
+.avocados img {
+    width: 20%;
 }
 
 
 /* Large devices*/
 @media screen and (min-width: 760px) {
-    
+    .spaceTop {
+        padding-top:5%;
+    }
+
+    /*********MAIN********/
+
     nav .logo {
         width: 50px;
         height: 50px;
@@ -145,6 +187,10 @@ nav .menubar {
     nav .menubar {
         width: 30px;
         height: 30px;
+    }
+
+    .mainText {
+        margin-top: 2%;
     }
     
     /*********HEALTHY********/
@@ -168,13 +214,6 @@ nav .menubar {
         margin:0px -15px;
     }
     
-    .specs {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
     .specsText {
         display: flex;
         justify-content: center;
@@ -193,11 +232,7 @@ nav .menubar {
     .specs li{
         padding-bottom:10px ;
     }
-    .specsText ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-    }
+
     .specsText article{
         padding:0px 13px 50px 13px;
     
