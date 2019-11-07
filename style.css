@@ -65,20 +65,43 @@ nav .menubar {
     justify-content: center;
 }
 
-/*********SPECS********/
+/*********SPECS********/ 
+.specs h2{
+    margin:0px -15px;
+}
+
+.specs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white
+}
 
 .specsText {
     display: flex;
     justify-content: center;
+    font-size: 27px;
 }
 
 .specsText article:first-child {
     text-align: right;
+    border-right: 1px solid white;
 }
 
+.specsText article:first-child ul li{
+ padding-bottom:19px;
+}
+.specs li{
+    padding-bottom:10px ;
+}
 .specsText ul {
     padding: 0;
+    margin: 0;
     list-style-type: none;
+}
+.specsText article{
+    padding:0px 13px 50px 13px;
+
 }
 
 /*********RECIPE********/
@@ -107,11 +130,11 @@ nav .menubar {
 /*********BACKGROUNDS*******/
 
 .greenBg {
-    background-color: #DCD3BD;
+    background-color: #B0BEAF
 }
 
 .beigeBg {
-    background-color: #B0BEAF;
+    background-color: #DCD3BD;
 }
 
 
@@ -122,7 +145,7 @@ nav .menubar {
         width:100px;
         height: 200px;
         border:1px solid black;
-        background-image: url(img/TheAvocadoOfStuff2.png);
+        background-image: url('img/TheAvocadoOfStuff2.png');
     }
 
 }
@@ -135,7 +158,7 @@ nav .menubar {
     .imgHealthy{
         width:100px;
         height: 200px;
-        background-image:url("img/TheAvocadoOfStuff2 2.png");
+        background-image:url("img/TheAvocadoOfStuff1.png");
         background-size:100px 200px;
 
     }
