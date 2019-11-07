@@ -39,7 +39,10 @@ h1 {
 
 p, li, h3 {
     font-family: 'Roboto Mono', monospace;
+    list-style-type: none;
+    
 }
+
 
 /*********BACKGROUNDS*******/
 
@@ -57,7 +60,7 @@ p, li, h3 {
 
 /*********FLEXBOX SECTIONS********/
 
-.mainText, .origin, .specs, .buy {
+.mainText, .origin, .specs, .buy, {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,7 +98,40 @@ nav .menubar {
 .originText {
     padding: 5%;
 }
+/*****HEALTHY*******/
+    .healthy{
+        text-align: center;
+    }
     
+    .imgHealthy{
+            width:210px;
+            height: 150px;
+            background-image: url('img/TheAvocadoOfStuff2.png');
+            background-size:cover ;
+        }
+/********SPECS******/
+    .specs h2{
+    margin:0px -15px;
+    font-size:44px;
+    }
+    .specs p{
+        padding-bottom: 24px;
+    }
+   .specsText article ul{
+    padding:0px;
+   
+}
+   .specsText article li{
+    padding-bottom:10px;
+}
+    .specsText :last-child{
+    margin:0px;
+}
+.specsText ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
 
 /*********RECIPE********/
 .recipe {
@@ -129,14 +165,8 @@ nav .menubar {
     }
     
     /*********HEALTHY********/
+ 
     
-    .healthy {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        min-height:100vh ;
-        
-    }
     .imgHealthy{
             width:210px;
             height: 150px;
@@ -145,23 +175,7 @@ nav .menubar {
         }
     
     /*********SPECS********/ 
-    .specs h2{
-        margin:0px -15px;
-    }
     
-    .specs {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .specsText {
-        display: flex;
-        justify-content: center;
-        margin-top:37px;
-        font-size: 23px;
-    }
     
     .specsText article:first-child {
         text-align: right;
@@ -171,14 +185,7 @@ nav .menubar {
     .specsText article:first-child ul li{
      padding-bottom:18px;
     }
-    .specs li{
-        padding-bottom:10px ;
-    }
-    .specsText ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-    }
+    
     .specsText article{
         padding:0px 13px 50px 13px;
     
