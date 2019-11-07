@@ -71,8 +71,7 @@ p, li, h3 {
 
 .greenBg, .beigeBg {
     color: white;
-}
-
+  
 /*********MAIN********/
 
 .main {
@@ -118,6 +117,40 @@ nav .menubar {
     align-items: center;
     justify-content: center;
 }
+/*****HEALTHY*******/
+    .healthy{
+        text-align: center;
+    }
+    
+    .imgHealthy{
+            width:210px;
+            height: 150px;
+            background-image: url('img/TheAvocadoOfStuff2.png');
+            background-size:cover ;
+        }
+/********SPECS******/
+    .specs h2{
+    margin:0px -15px;
+    font-size:44px;
+    }
+    .specs p{
+        padding-bottom: 24px;
+    }
+   .specsText article ul{
+    padding:0px;
+   
+}
+   .specsText article li{
+    padding-bottom:10px;
+}
+    .specsText :last-child{
+    margin:0px;
+}
+.specsText ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
 
 .specsText ul {
     padding: 0;
@@ -194,14 +227,8 @@ nav .menubar {
     }
     
     /*********HEALTHY********/
+ 
     
-    .healthy {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        min-height:100vh ;
-        
-    }
     .imgHealthy{
             width:210px;
             height: 150px;
@@ -210,9 +237,6 @@ nav .menubar {
         }
     
     /*********SPECS********/ 
-    .specs h2{
-        margin:0px -15px;
-    }
     
     .specsText {
         display: flex;
