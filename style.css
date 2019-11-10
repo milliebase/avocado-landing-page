@@ -210,6 +210,54 @@ nav .menubar {
 .avocados img {
     width: 20%;
 }
+/****Amount avocados****/
+ .selectAmount{
+    font-size:16px;
+    height:37px;
+    width:210px;
+    border-radius: 2px;
+    text-align: center;
+    border: thin solid black;
+    padding:10px;
+    
+    
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}  
+select{
+    background-image:
+    linear-gradient(45deg, transparent 50%, rgb(0, 0, 0) 50%),
+    linear-gradient(135deg, rgb(0, 0, 0) 50%, transparent 50%),
+    linear-gradient(to right, black,    black);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    80% -0%;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 2.5em;
+  background-repeat: no-repeat;
+}
+.buyBtn{
+border:2px solid  #B0BEAF;
+font-size:16px;
+color:white;
+width: 149px;
+background: #B0BEAF;
+height: 44px;
+border-radius:35px;
+}
+.buyBtn:hover{
+    cursor: pointer;
+}
+.buyBtn:active{
+    border-color:#91a78f;
+    border-radius:35px;
+}
 /********footer*************/
 footer{
     display: flex;
@@ -345,12 +393,13 @@ footer ul{
  /*Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+
     .imgHealthy{
-       
-       background-image:url("img/TheAvocadoOfStuff1.png");
+        
+        background-image:url("img/TheAvocadoOfStuff1.png");
         background-size:contain,cover;
         width:94%;
-        background-position: 0px;
+        background-position: center;
     }
 }
  
