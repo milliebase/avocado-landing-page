@@ -7,7 +7,7 @@
         url('/fonts/GardenGrownUS-B.woff') format('woff');
 } */
 
-/*MOBILDE-FIRST*/
+/*MOBILE-FIRST*/
 
 body {
     width: 100%;
@@ -16,33 +16,48 @@ body {
 
 section {
     min-height: 100vh;
+    min-width: 100vw;
 }
 
-section:not(.recipe) {
-    padding: 3%;
+/*********FLEXBOX SECTIONS********/
+
+.flexColCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /**********TEXT********/
 
 h1, h2 {
     font-family: 'Devonshire', cursive;
+    margin: 0;
 }
 
 h1, .main h2 {
     color: #B0BEAF;
-    margin: 0;
 }
 
 h1 {
-    font-size: 10em;
+    font-size: 4em;
+}
+
+.spaceTop {
+    padding-top: 15%;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.recipe h2 {
+    text-align: center;
 }
 
 p, li, h3 {
     font-family: 'Roboto Mono', monospace;
-    list-style-type: none;
-    
+    font-size: 14px;
 }
-
 
 /*********BACKGROUNDS*******/
 
@@ -56,16 +71,7 @@ p, li, h3 {
 
 .greenBg, .beigeBg {
     color: white;
-}
-
-/*********FLEXBOX SECTIONS********/
-
-.mainText, .origin, .specs, .buy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+  
 /*********MAIN********/
 
 .main {
@@ -76,11 +82,12 @@ p, li, h3 {
 nav {
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 }
 
 nav .logo {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     transform: rotate(-36deg);
 }
 
@@ -91,12 +98,24 @@ nav .menubar {
 }
 
 .mainText {
+    flex-grow: 1;
     margin-top: 5%;
+    background-image: url("img/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
 }
-
 /*********ORIGIN********/
 .originText {
     padding: 5%;
+}   
+
+/*********SPECS********/
+.specs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 /*****HEALTHY*******/
     .healthy{
@@ -138,6 +157,11 @@ nav .menubar {
         list-style-type: none;
     }
 
+.specsText ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
 /*********RECIPE********/
 .recipe {
     display:flex;
@@ -150,35 +174,49 @@ nav .menubar {
     object-fit: cover;
 }
 
+.recipe article:first-child {
+    padding: 7%;
+}
+
+.recipe h3 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.recipe ul {
+    padding-bottom: 5%;
+}
+
 /*********BUY********/
-.buy article img {
-    width: 100%;
-}/**CONTACT**/
-footer{
-    border-top:1px solid black;
+.buy article {
     display: flex;
-    flex-direction: row;
-    width:100%
-}
-footer ol {
-    padding:0px;
-    margin:0px;
-    text-align: left;
-
-}
-footer article{ width: 50%;}
-
-footer article{
-    border:1px solid black;
-    /* text-align:left; */
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 760px) {
+.avocados {
+    width: 80%;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 15px;
     
+}
+
+.avocados img {
+    width: 20%;
+}
+
+
+/* Large devices*/
+@media screen and (min-width: 760px) {
+    .spaceTop {
+        padding-top:5%;
+    }
+
+    /*********MAIN********/
+
     nav .logo {
         width: 50px;
         height: 50px;
@@ -187,6 +225,10 @@ footer article{
     nav .menubar {
         width: 30px;
         height: 30px;
+    }
+
+    .mainText {
+        margin-top: 2%;
     }
     
     /*********HEALTHY********/
@@ -201,6 +243,12 @@ footer article{
     
     /*********SPECS********/ 
     
+    .specsText {
+        display: flex;
+        justify-content: center;
+        margin-top:37px;
+        font-size: 23px;
+    }
     
     .specsText article:first-child {
         text-align: right;
@@ -210,7 +258,10 @@ footer article{
     .specsText article:first-child ul li{
      padding-bottom:18px;
     }
-    
+    .specs li{
+        padding-bottom:10px ;
+    }
+
     .specsText article{
         padding:0px 13px 50px 13px;
     
@@ -218,9 +269,9 @@ footer article{
     
     /*********RECIPE********/
     .recipe {
-        display: flex;
+        flex-direction: row;
     }
-    
+
     .recipe article:first-child {
         width: 50%;
         display: flex;
@@ -228,22 +279,21 @@ footer article{
         justify-content: center;
         padding-left: 5%;
     }
-    
+
     .recipe article:last-child {
         width: 50%;
     }
     
-    .recipe img {
+    .recipe article img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
     } 
 }
 
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
 
     .imgHealthy{
         transform: scale(3) translateY(40%);
@@ -252,6 +302,6 @@ footer article{
 
     }
 }
-
+ */
 
 
