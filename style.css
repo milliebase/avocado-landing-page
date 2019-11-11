@@ -1,11 +1,7 @@
-/* #### Generated By: http://www.cufonfonts.com #### */
-/* @font-face {
-    font-family: 'Garden Grown US B';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Garden Grown US B'), 
-        url('/fonts/GardenGrownUS-B.woff') format('woff');
-} */
+@font-face {
+    font-family: 'Avocado Lime';
+    src: local('Avocado & Lime'), url('fonts/Avocado & Lime.ttf') format('ttf');
+}
 
 /**MOBILE-FIRST**/
 html {
@@ -17,7 +13,7 @@ body {
     height: 100%;
 }
 
-section {
+section:not(.buy) {
     min-height: 100vh;
     min-width: 100vw;
 }
@@ -33,7 +29,8 @@ section {
 /**********TEXT********/
 
 h1, h2 {
-    font-family: 'Devonshire', cursive;
+    font-family: 'Avocado Lime';
+    font-weight: normal;
     margin: 0;
 }
 
@@ -50,7 +47,7 @@ h1 {
 }
 
 h2:not(.recipeHeading) {
-    font-size: 2.5em;
+    font-size: 3em;
     width: 60%;
     text-align: center;
     line-height: 1em;
@@ -122,19 +119,22 @@ nav .menubar {
 .origin {
     color: black;
 }
+
 .originText {
     padding:5%;
 }   
 
-.more{
+.more {
     background: none;
 	color: inherit;
 	padding: 0;
     cursor: pointer;
-	outline: inherit;
-    border: 1px solid white;
-    font-size: 22px;
+    outline: inherit;
+    border: none;
     position: relative;
+    margin: 8%;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 /*****HEALTHY*******/
@@ -224,6 +224,7 @@ nav .menubar {
     width: 80%;
     border: 1px solid white;
     border-radius: 15px;
+    margin-bottom: 5%;
 }
 
 .avocado {
@@ -269,6 +270,7 @@ nav .menubar {
 .buy {
     justify-content: center;
     flex-grow: 1;
+    min-height: 90vh;
 }
 
 .selectAmount {
@@ -276,9 +278,8 @@ nav .menubar {
     height:44px;
     width:210px;
     border-radius: 15px;
-    text-align: center;
     border: thin solid black;
-    padding:10px;
+    padding: 10px 25px;
     
     
     -webkit-box-sizing: border-box;
@@ -370,8 +371,8 @@ footer ul {
     }
 
     /*********TEXT********/
-    h2 {
-        font-size: 3em;
+    h2:not(.recipeHeading) {
+        font-size: 4em;
     }
 
     .recipeHeading {
@@ -396,9 +397,12 @@ footer ul {
 
     /*********ORIGIN********/
     .originText {
-        padding: 5% 20%;
+        padding: 3% 20%;
     }   
 
+    .more {
+        margin: 4% 8%;
+    }
     /*********HEALTHY********/
     .imgHealthy{
             width:100%;
