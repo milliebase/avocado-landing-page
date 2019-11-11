@@ -109,9 +109,20 @@ nav .menubar {
     background-position: 50% 70%;
 }
 /*********ORIGIN********/
+
 .originText {
-    padding: 5%;
+    padding:5%;
 }   
+.more{
+    background: none;
+	color: inherit;
+	padding: 0;
+    cursor: pointer;
+	outline: inherit;
+    border: 1px solid white;
+    font-size: 22px;
+    position: relative;
+}
 
 /*****HEALTHY*******/
 .healthy{
@@ -477,7 +488,6 @@ footer ul {
 @media only screen and (min-width: 992px) {
 
     .imgHealthy{
-        
         background-image:url("img/TheAvocadoOfStuff1.png");
         background-size:contain,cover;
         width:94%;
