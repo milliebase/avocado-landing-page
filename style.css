@@ -46,7 +46,7 @@ h1 {
 }
 
 .spaceTop {
-    padding-top: 15%;
+    margin-top: 13%;
 }
 
 h2 {
@@ -55,6 +55,7 @@ h2 {
 
 .recipe h2 {
     text-align: center;
+    margin-bottom: 5%;
 }
 
 p, li, h3 {
@@ -69,7 +70,7 @@ p, li, h3 {
 }
 
 .beigeBg {
-    background-color: #DCD3BD;
+    background-color: rgb(207, 194, 160);
 }
 
 .greenBg, .beigeBg {
@@ -98,6 +99,7 @@ nav .menubar {
     width: 44px;
     height: 44px;
     align-self: flex-end;
+    margin-bottom: 4%;
 }
 
 .mainText {
@@ -119,36 +121,26 @@ nav .menubar {
     margin-left:-11px;
 }
 
-.healthy h2 {
-    font-size: 44px;
-    padding:20px;
-    margin:0px;
-}
-
 .imgHealthy {
     width:100%;
-    height: 80vh;
     background-image: url('img/TheAvocadoOfStuff2.png');
     background-repeat: no-repeat;
     background-size:cover;
     background-position-x:-150px;
+    margin-top: 5%;
 }
 
 /*********SPECS********/
 .specs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
-.specs h2 {
-    margin:0px -15px;
-    font-size: 44px;
+    justify-content: center;
 }
 
 .specs p {
-    padding-bottom: 24px;
-    padding-right: 50px;
+    margin: 0;
+}
+
+.specsText {
+    margin-top: 10%;
 }
 
 .specsText article ul {
@@ -161,12 +153,6 @@ nav .menubar {
 
 .specsText :last-child {
     margin:0px;
-}
-
-.specsText ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
 }
 
 .specsText ul {
@@ -208,7 +194,7 @@ nav .menubar {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 5%;
+    padding: 5% 5% 8%;
 }
 
 .avocadoBox {
@@ -257,6 +243,11 @@ nav .menubar {
 }
 
 /*******BUY*******/
+.buy {
+    justify-content: center;
+    flex-grow: 1;
+}
+
 .selectAmount {
     font-size:16px;
     height:37px;
@@ -297,7 +288,7 @@ select {
     width: 149px;
     background: #B0BEAF;
     height: 44px;
-    border-radius:35px;
+    border-radius: 15px;
 }
 
 .buyButton:hover {
@@ -343,7 +334,7 @@ footer ul {
 /* Large devices*/
 @media screen and (min-width: 760px) {
     .spaceTop {
-        padding-top:5%;
+        margin-top:5%;
     }
 
     /*********TEXT********/
@@ -351,8 +342,11 @@ footer ul {
         font-size: 3em;
     }
 
-    /*********MAIN********/
+    .recipe h2 {
+        text-align: left;
+    }
 
+    /*********MAIN********/
     nav .logo {
         width: 50px;
         height: 50px;
@@ -361,12 +355,18 @@ footer ul {
     nav .menubar {
         width: 30px;
         height: 30px;
+        margin-bottom: 2%;
     }
 
     .mainText {
         margin-top: 2%;
     }
-    
+
+    /*********ORIGIN********/
+    .originText {
+        padding: 5% 20%;
+    }   
+
     /*********HEALTHY********/
     .imgHealthy{
             width:100%;
@@ -375,24 +375,16 @@ footer ul {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: -200px;
-        } 
+    } 
     
     /*********SPECS********/ 
-    .specs h2{
-        font-size: 70px;
-    }
-
-    .specs p{
-        font-size:18px;
-    }
-
     .specsText{
         display: flex;
         flex-direction: row;
+        margin-top: 5%;
     }
 
     .specsText ul li {
-        font-size: 23px;
         padding: 0px 20px ;
         padding-bottom: 35px;
         width:100%;
@@ -417,7 +409,7 @@ footer ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 5%;
+        padding: 2% 5%;
     }
 
     .recipe article:last-child {
@@ -428,6 +420,10 @@ footer ul {
         width: 100%;
         height: 100%;
     } 
+
+    .recipe li {
+        margin: 0;
+    }
 
     /*********CHOOSE AVOCADO********/
     .chooseAvocado article {
