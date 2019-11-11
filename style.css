@@ -42,23 +42,31 @@ h1, .main h2 {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 5em;
 }
 
 .spaceTop {
     margin-top: 13%;
 }
 
-h2 {
-    font-size: 2em;
+h2:not(.recipeHeading) {
+    font-size: 2.5em;
+    width: 60%;
+    text-align: center;
+    line-height: 1em;
 }
 
-.recipe h2 {
+.recipeHeading {
     text-align: center;
     margin-bottom: 5%;
+    font-size: 2.5em;
 }
 
-p, li, h3 {
+.buy h3 {
+    margin: 0 0 15%;
+}
+
+p, li, h3, button, select {
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
 }
@@ -70,7 +78,7 @@ p, li, h3 {
 }
 
 .beigeBg {
-    background-color: rgb(207, 194, 160);
+    background-color: #DCD3BD;
 }
 
 .greenBg, .beigeBg {
@@ -111,10 +119,13 @@ nav .menubar {
     background-position: 50% 70%;
 }
 /*********ORIGIN********/
-
+.origin {
+    color: black;
+}
 .originText {
     padding:5%;
 }   
+
 .more{
     background: none;
 	color: inherit;
@@ -262,9 +273,9 @@ nav .menubar {
 
 .selectAmount {
     font-size:16px;
-    height:37px;
+    height:44px;
     width:210px;
-    border-radius: 2px;
+    border-radius: 15px;
     text-align: center;
     border: thin solid black;
     padding:10px;
@@ -276,6 +287,10 @@ nav .menubar {
     -webkit-appearance: none;
     -moz-appearance: none;
 } 
+
+.selectAmount:focus {
+    outline: none;
+}
 
 select {
     background-image:
@@ -301,6 +316,8 @@ select {
     background: #B0BEAF;
     height: 44px;
     border-radius: 15px;
+    text-transform: uppercase;
+    margin-top: 10%;
 }
 
 .buyButton:hover {
@@ -309,7 +326,10 @@ select {
 
 .buyButton:active {
     border-color:#91a78f;
-    border-radius:35px;
+}
+
+.buyButton:focus {
+    outline: none;
 }
 
 /********footer*************/
@@ -354,7 +374,7 @@ footer ul {
         font-size: 3em;
     }
 
-    .recipe h2 {
+    .recipeHeading {
         text-align: left;
     }
 
@@ -367,7 +387,7 @@ footer ul {
     nav .menubar {
         width: 30px;
         height: 30px;
-        margin-bottom: 2%;
+        margin-bottom: 0;
     }
 
     .mainText {
@@ -457,6 +477,16 @@ footer ul {
 
     .avocadoDetail {
         padding-bottom: 15%;
+    }
+
+
+    /*******BUY*******/
+    .buy h3 {
+        margin: 0 0 5%;
+    }
+
+    .buyButton {
+        margin-top: 5%;
     }
 
     /** contact **/
