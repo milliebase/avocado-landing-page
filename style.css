@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Avocado Lime';
-    src: local('Avocado & Lime'), url('fonts/Avocado & Lime.ttf') format('ttf');
+    font-family: 'Garden Grown US B';
+    src: local('Garden Grown US B'), url('fonts/GardenGrownUS-B.woff') format('woff');
 }
 
 /**MOBILE-FIRST**/
@@ -29,7 +29,7 @@ section:not(.buy) {
 /**********TEXT********/
 
 h1, h2 {
-    font-family: 'Avocado Lime';
+    font-family: 'Garden Grown US B';
     font-weight: normal;
     margin: 0;
 }
@@ -39,7 +39,7 @@ h1, .main h2 {
 }
 
 h1 {
-    font-size: 8em;
+    font-size: 6.5em;
 }
 
 .spaceTop {
@@ -47,15 +47,15 @@ h1 {
 }
 
 h2:not(.recipeHeading) {
-    font-size: 3em;
+    font-size: 2.8em;
     width: 60%;
     text-align: center;
     line-height: 1em;
 }
 
 .mainText h2 {
-    transform: translateY(-70%);
-    line-height: 0.6em;
+    transform: translateY(-40%);
+    line-height: 0.9em;
 }
 
 .recipeHeading {
