@@ -152,17 +152,27 @@ nav .menubar {
     text-align: center;
     margin-left:-11px;
 }
-
+ @media screen and (min-width: 376px){
+    .imgHealthy{ 
+    background-size:cover;
+    border-color:white;
+    }
+ }
 .imgHealthy {
     width:100%;
-    height: 80vh;
+    height: 70vh;
     background-image: url('img/TheAvocadoOfStuff2.png');
     background-repeat: no-repeat;
     background-size:contain,cover;
     background-position-x:-100px;
     margin-top: 5%;
 }
-
+ @media screen and (min-width: 370px){
+    .imgHealthy{ background-size:cover;}
+}
+  @media screen and (min-width: 500px){
+.imgHealthy{ background-size:contain,cover; }
+ }
 /*********SPECS********/
 .specs {
     justify-content: center;
