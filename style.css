@@ -155,11 +155,11 @@ nav .menubar {
 
 .imgHealthy {
     width:100%;
-    height: 80vh;
+    height: 75vh;
     background-image: url('img/TheAvocadoOfStuff2.png');
     background-repeat: no-repeat;
-    background-size:cover;
-    background-position-x:-150px;
+    background-size:contain,cover;
+    background-position-x:-100px;
     margin-top: 5%;
 }
 
@@ -418,11 +418,11 @@ footer ul {
     /*********HEALTHY********/
     .imgHealthy{
             width:100%;
-            height: 85vh;
-            background-image: url('img/TheAvocadoOfStuff2.png');
+            height: 75vh;
+            background-image: url('img/TheAvocadoOfStuff1.png');
             background-repeat: no-repeat;
-            background-size: cover;
-            background-position: -200px;
+            background-size: contain,cover;
+            background-position: 25px;
     } 
     
     /*********SPECS********/ 
